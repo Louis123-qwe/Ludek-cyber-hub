@@ -1,0 +1,101 @@
+import type { AchievementDefinition, AnnouncementRecord } from '../types/curriculum';
+
+export const ACHIEVEMENTS_CATALOG: AchievementDefinition[] = [
+  {
+    id: 'first_lesson',
+    title: 'First Step Forward',
+    description: 'Complete your first interactive lesson in Ludek Tech Hub.',
+    criteriaType: 'lessons_completed',
+    criteriaValue: 1,
+    xpBonus: 50,
+  },
+  {
+    id: 'first_code_run',
+    title: 'Hello Sandbox',
+    description: 'Execute live HTML, CSS, or JavaScript inside the Code Lab.',
+    criteriaType: 'code_runs',
+    criteriaValue: 1,
+    xpBonus: 30,
+  },
+  {
+    id: 'first_challenge',
+    title: 'Problem Solver',
+    description: 'Pass all automated checks on your first coding exercise.',
+    criteriaType: 'exercises_passed',
+    criteriaValue: 1,
+    xpBonus: 75,
+  },
+  {
+    id: 'quiz_master',
+    title: 'Verified Understanding',
+    description: 'Pass a module assessment with 70% or higher.',
+    criteriaType: 'quizzes_passed',
+    criteriaValue: 1,
+    xpBonus: 100,
+  },
+  {
+    id: 'html_foundations',
+    title: 'Structure Architect',
+    description: 'Complete every lesson in Path 1: HTML Foundations.',
+    criteriaType: 'path_html_completed',
+    criteriaValue: 1,
+    xpBonus: 200,
+  },
+  {
+    id: 'css_foundations',
+    title: 'Layout Craftsperson',
+    description: 'Complete every lesson in Path 2: CSS Foundations.',
+    criteriaType: 'path_css_completed',
+    criteriaValue: 1,
+    xpBonus: 200,
+  },
+  {
+    id: 'first_js_function',
+    title: 'Logic Builder',
+    description: 'Solve a JavaScript exercise in Path 4.',
+    criteriaType: 'js_exercises_passed',
+    criteriaValue: 1,
+    xpBonus: 100,
+  },
+  {
+    id: 'first_project',
+    title: 'Real Builder',
+    description: 'Complete and submit your first guided portfolio project.',
+    criteriaType: 'projects_completed',
+    criteriaValue: 1,
+    xpBonus: 250,
+  },
+  {
+    id: 'streak_seven',
+    title: 'Seven-Day Momentum',
+    description: 'Maintain an active 7-day learning streak.',
+    criteriaType: 'streak_days',
+    criteriaValue: 7,
+    xpBonus: 300,
+  },
+  {
+    id: 'debugging_specialist',
+    title: 'Debugging Specialist',
+    description: 'Pass 5 interactive coding exercises across the curriculum.',
+    criteriaType: 'exercises_passed',
+    criteriaValue: 5,
+    xpBonus: 150,
+  },
+];
+
+export const DEFAULT_ANNOUNCEMENTS: AnnouncementRecord[] = [
+  {
+    id: 'ann-1',
+    title: 'Welcome to Ludek Tech Hub',
+    body: 'New to coding? Start at Path 0 and toggle "Break It Down" inside any lesson to step through concepts slowly with analogies and live code.',
+    published: true,
+    createdAt: '2026-11-01T09:00:00Z',
+  },
+  {
+    id: 'ann-2',
+    title: 'Interactive Networking & Git Simulators Ready',
+    body: 'Test the 11-stage URL-to-Website lifecycle, HTTP Request Builder, and live Git Terminal under Visualizers.',
+    published: true,
+    createdAt: '2026-11-15T12:00:00Z',
+  },
+];

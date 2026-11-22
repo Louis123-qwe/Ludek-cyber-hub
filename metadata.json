@@ -1,0 +1,6 @@
+{
+  "name": "Ludek Tech Hub",
+  "description": "Learn. Understand. Build. Become. An interactive front-end engineering academy taking complete beginners from zero coding experience to building real websites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

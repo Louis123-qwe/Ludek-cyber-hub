@@ -1,0 +1,1735 @@
+MASTER BUILD PROMPT: LUDEK TECH HUB
+
+ROLE
+
+Act as a senior full-stack engineer, UI/UX designer, EdTech architect, curriculum designer, software security engineer, and technical educator.
+
+Your task is to design and BUILD a production-quality, interactive learning platform called LUDEK TECH HUB.
+
+This is not a landing-page project, a UI mockup, or a static tutorial website.
+
+Build a complete, functional learning platform that takes a complete beginner from zero technical knowledge to competent front-end development skills through structured lessons, guided breakdowns, hands-on coding, interactive challenges, projects, assessments, and progress tracking.
+
+Do not just give me a plan, recommendations, architecture diagrams, or code snippets.
+
+IMPLEMENT THE ACTUAL APPLICATION.
+
+Work directly inside the available development environment. Create files, install dependencies, implement functionality, run the application, test it, fix errors, and continue until the platform is genuinely usable.
+
+---
+
+1. PRODUCT IDENTITY
+
+Product name: Ludek Tech Hub
+
+Tagline: Learn. Understand. Build. Become.
+
+Mission:
+
+Make front-end development accessible to absolute beginners by breaking difficult technical concepts into simple, progressive, interactive learning experiences.
+
+Target users:
+
+- Absolute beginners with zero coding experience.
+- Students learning web development.
+- Self-taught developers.
+- People learning on mobile phones.
+- People who understand theory but struggle to write code.
+- Beginners who need concepts explained slowly and repeatedly.
+- Learners who want to build a real portfolio.
+
+The platform should feel like a premium technology academy, not a generic LMS, blog, or AI-generated dashboard.
+
+Design a recognizable brand identity with a sophisticated technology aesthetic.
+
+---
+
+2. TECHNICAL STACK
+
+Use a modern, maintainable, production-oriented architecture.
+
+Preferred stack:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide icons
+- Supabase for authentication, PostgreSQL database, user profiles, progress persistence, and backend services.
+- Monaco Editor or CodeMirror for interactive code editing.
+- Browser-based HTML/CSS/JavaScript execution using secure sandboxed iframe previews.
+- React Router for navigation.
+- Zod for input validation where appropriate.
+
+Use free-tier-friendly infrastructure and open-source libraries.
+
+If an alternative is technically superior, use it only if it does not compromise simplicity, cost, maintainability, or deployment.
+
+Do not require paid APIs for the core functionality.
+
+The application must be capable of running locally without Supabase credentials using a clearly defined local development mode, while real authentication and database persistence should work when Supabase is configured.
+
+Do not expose secrets, service-role keys, private API keys, or privileged credentials in frontend code.
+
+Create:
+
+- .env.example
+- README.md
+- Clear setup instructions
+- Database schema
+- Supabase migrations
+- Security policies
+- Proper project structure
+
+---
+
+3. VISUAL DESIGN
+
+Create an exceptional interface.
+
+Design direction:
+
+- Modern developer academy.
+- Premium, professional, futuristic but restrained.
+- Dark interface as the primary theme.
+- Optional light theme.
+- Deep charcoal and near-black backgrounds.
+- Electric blue, cyan, or subtle violet accent colors.
+- Clean typography.
+- Strong visual hierarchy.
+- Generous spacing.
+- Rounded cards used tastefully.
+- Subtle animations.
+- Smooth transitions.
+- High-quality dashboard layouts.
+- Excellent mobile experience.
+
+Avoid:
+
+- Generic AI-generated dashboard aesthetics.
+- Excessive gradients.
+- Excessive glowing effects.
+- Unnecessary glassmorphism.
+- Huge meaningless empty sections.
+- Repetitive card grids.
+- Fake charts.
+- Fake notifications.
+- Decorative buttons that do nothing.
+- Excessive emoji.
+- Lorem ipsum.
+
+Every screen must have a clear purpose.
+
+Create a consistent design system including:
+
+- Color tokens.
+- Typography.
+- Spacing.
+- Buttons.
+- Inputs.
+- Cards.
+- Navigation.
+- Modal dialogs.
+- Progress indicators.
+- Badges.
+- Tooltips.
+- Toast notifications.
+- Empty states.
+- Loading states.
+- Error states.
+
+Ensure accessibility, keyboard navigation, contrast, and reduced-motion support.
+
+---
+
+4. APPLICATION STRUCTURE
+
+Build the following major sections.
+
+A. Landing page
+
+A professional homepage containing:
+
+- Brand identity.
+- Hero section.
+- Clear headline.
+- Short explanation of the platform.
+- Start learning CTA.
+- Explore curriculum CTA.
+- Course overview.
+- Learning methodology.
+- Interactive learning preview.
+- Project showcase.
+- Student progression roadmap.
+- Testimonials section only if real data exists. Do not invent testimonials.
+- FAQ.
+- Footer.
+
+The landing page should immediately demonstrate the interactive nature of the platform.
+
+Provide an actual live coding preview where the learner can change code and see the result.
+
+---
+
+B. Authentication
+
+Implement a real authentication system.
+
+Features:
+
+- Sign up.
+- Email/password login.
+- Logout.
+- Password reset.
+- Email verification support.
+- Session persistence.
+- Protected routes.
+- User profile.
+- Username.
+- Avatar.
+- Account settings.
+- Password management.
+- Profile editing.
+
+Authentication should integrate with Supabase Auth when configured.
+
+Provide a local development mode only for development, with clear separation from production authentication.
+
+Never simulate successful production authentication.
+
+---
+
+C. Student dashboard
+
+Create a personalized dashboard showing:
+
+- Welcome message.
+- Current learning path.
+- Continue learning button.
+- Overall completion percentage.
+- Current course.
+- Current module.
+- Current lesson.
+- Learning streak.
+- Time spent learning.
+- Completed lessons.
+- Skill levels.
+- XP points.
+- Achievements.
+- Upcoming recommended lessons.
+- Recent activity.
+- Project progress.
+- Weekly learning statistics.
+- Learning goals.
+
+The dashboard must use real user data.
+
+Every metric must be calculated from actual progress records, not hardcoded numbers.
+
+If the user has not started, provide an excellent first-time-user onboarding experience.
+
+---
+
+5. LEARNING EXPERIENCE ENGINE
+
+This is the most important part of the application.
+
+The learning system must not simply display text articles.
+
+Create an interactive lesson engine that supports different lesson content types.
+
+Each lesson should have:
+
+1. Learning objectives.
+2. Beginner-friendly introduction.
+3. Prerequisites.
+4. Concept explanation.
+5. Step-by-step breakdown.
+6. Real examples.
+7. Interactive demonstration.
+8. Code editor.
+9. Live preview.
+10. Guided exercise.
+11. Challenge.
+12. Knowledge checkpoint.
+13. Quiz.
+14. Common mistakes.
+15. Summary.
+16. Key takeaways.
+17. Next lesson.
+
+Allow learners to:
+
+- Slow down explanations.
+- Expand detailed breakdowns.
+- Replay concepts.
+- Reveal explanations progressively.
+- Toggle between beginner and deeper explanations.
+- Highlight important code.
+- View code execution step by step.
+- Ask for a simpler explanation.
+- See analogies.
+- Test themselves.
+- Reset exercises.
+- Show hints.
+- Reveal solutions only when requested.
+
+SLOW LEARNING MODE
+
+Implement a special feature called:
+
+"BREAK IT DOWN"
+
+When activated, concepts are presented in small, sequential steps.
+
+Example:
+
+Instead of explaining:
+
+"HTML provides the semantic structure of a document."
+
+Break it down:
+
+STEP 1:
+A website is a document that your browser reads.
+
+STEP 2:
+HTML tells the browser what different parts of that document are.
+
+STEP 3:
+For example, a heading is different from a paragraph.
+
+STEP 4:
+We use tags to communicate those differences.
+
+STEP 5:
+Let's write our first heading.
+
+Show the code:
+
+<h1>Hello World</h1>Then explain:
+
+- What <h1> means.
+- Why the opening tag exists.
+- Why the closing tag exists.
+- What the browser does.
+- What happens if the closing tag is missing.
+- Why this matters in real development.
+
+The learner must be able to press:
+
+NEXT STEP
+
+and move through the explanation at their own pace.
+
+Implement:
+
+- Previous step.
+- Next step.
+- Replay.
+- Pause.
+- Step completion indicators.
+- Progress bar.
+- Optional automatic pacing.
+- Manual pacing by default.
+
+Do not overwhelm beginners with multiple unfamiliar concepts in one explanation.
+
+Every technical term should have an accessible explanation the first time it appears.
+
+---
+
+6. COMPLETE CURRICULUM
+
+Build a comprehensive front-end developer curriculum.
+
+Organize it into learning paths, courses, modules, lessons, exercises, projects, and assessments.
+
+The curriculum should be progressive.
+
+LEARNING PATH 0: COMPUTER AND WEB FUNDAMENTALS
+
+Teach:
+
+- What a computer is.
+- Files and folders.
+- File extensions.
+- Text editors.
+- Browsers.
+- Operating systems.
+- Basic terminal concepts.
+- What programming means.
+- What a website is.
+- What a web application is.
+- How websites work.
+- Front-end versus back-end.
+- What a developer does.
+- Setting up a development environment.
+- VS Code.
+- Browser developer tools.
+- Creating a project folder.
+- Running a basic HTML file.
+
+Include simple interactive exercises.
+
+LEARNING PATH 1: HTML
+
+Course: HTML Foundations
+
+Teach in depth:
+
+- What HTML is.
+- HTML document structure.
+- DOCTYPE.
+- html.
+- head.
+- body.
+- Meta tags.
+- Titles.
+- Headings.
+- Paragraphs.
+- Line breaks.
+- Comments.
+- Text formatting.
+- Links.
+- Absolute and relative paths.
+- Images.
+- Image alt text.
+- Lists.
+- Ordered lists.
+- Unordered lists.
+- Nested lists.
+- Tables.
+- Table accessibility.
+- Forms.
+- Inputs.
+- Labels.
+- Buttons.
+- Textareas.
+- Select elements.
+- Checkboxes.
+- Radio buttons.
+- Form validation.
+- Semantic HTML.
+- Header.
+- Nav.
+- Main.
+- Section.
+- Article.
+- Aside.
+- Footer.
+- Div.
+- Span.
+- Audio.
+- Video.
+- Iframes.
+- Accessibility.
+- SEO fundamentals.
+- Common HTML errors.
+- HTML best practices.
+
+Create exercises for every topic.
+
+Projects:
+
+1. Personal biography page.
+2. Student profile page.
+3. Semantic news article.
+4. Contact form.
+5. Product information page.
+6. Multi-page website.
+
+---
+
+LEARNING PATH 2: CSS
+
+Course: CSS Foundations
+
+Teach progressively:
+
+- What CSS is.
+- Why styling exists.
+- Inline CSS.
+- Internal CSS.
+- External CSS.
+- CSS syntax.
+- Selectors.
+- Element selectors.
+- Class selectors.
+- ID selectors.
+- Attribute selectors.
+- Pseudo-classes.
+- Pseudo-elements.
+- Specificity.
+- Cascade.
+- Inheritance.
+- Box model.
+- Margin.
+- Padding.
+- Border.
+- Width.
+- Height.
+- Box-sizing.
+- Display.
+- Block.
+- Inline.
+- Inline-block.
+- None.
+- Position.
+- Static.
+- Relative.
+- Absolute.
+- Fixed.
+- Sticky.
+- Z-index.
+- Overflow.
+- Colors.
+- RGB.
+- HEX.
+- HSL.
+- Opacity.
+- Backgrounds.
+- Gradients.
+- Typography.
+- Font families.
+- Font sizes.
+- Font weights.
+- Line height.
+- Letter spacing.
+- Text alignment.
+- Shadows.
+- Borders.
+- Border radius.
+- Flexbox.
+- Flex direction.
+- Justify content.
+- Align items.
+- Align content.
+- Gap.
+- Wrapping.
+- CSS Grid.
+- Grid columns.
+- Grid rows.
+- Grid areas.
+- Responsive design.
+- Media queries.
+- Mobile-first design.
+- Fluid sizing.
+- Relative units.
+- REM.
+- EM.
+- VW.
+- VH.
+- Percentages.
+- CSS variables.
+- Transitions.
+- Transformations.
+- Animations.
+- Keyframes.
+- Hover effects.
+- Responsive navigation.
+- Responsive images.
+- CSS architecture.
+- Naming conventions.
+- Debugging CSS.
+- Browser developer tools.
+
+Projects:
+
+1. Styled profile page.
+2. Responsive landing page.
+3. Pricing cards.
+4. Responsive navigation.
+5. Dashboard UI.
+6. Product page.
+7. Portfolio website.
+8. Responsive multi-page website.
+
+Include interactive visual tools to demonstrate:
+
+- Box model.
+- Flexbox.
+- Grid.
+- Positioning.
+- Specificity.
+- Responsive breakpoints.
+- Color combinations.
+- Typography.
+
+---
+
+LEARNING PATH 3: NETWORKING AND HOW THE WEB WORKS
+
+Course: Web and Networking Fundamentals for Developers
+
+Explain networking in beginner-friendly language without sacrificing technical accuracy.
+
+Teach:
+
+- What the internet is.
+- What a network is.
+- Client and server.
+- What happens when you enter a URL.
+- Browser request lifecycle.
+- DNS.
+- IP addresses.
+- IPv4.
+- IPv6 basics.
+- Domain names.
+- DNS resolution.
+- Hosting.
+- Servers.
+- Ports.
+- TCP.
+- UDP.
+- HTTP.
+- HTTPS.
+- TLS.
+- Request and response.
+- HTTP methods.
+- GET.
+- POST.
+- PUT.
+- PATCH.
+- DELETE.
+- HTTP status codes.
+- 200. 
+- 201. 
+- 301. 
+- 302. 
+- 400. 
+- 401. 
+- 403. 
+- 404. 
+- 500. 
+- Headers.
+- Request body.
+- Response body.
+- Cookies.
+- Sessions.
+- Local storage.
+- Session storage.
+- Cache.
+- CDN.
+- Browser security.
+- CORS.
+- Same-origin policy.
+- REST APIs.
+- JSON.
+- Fetch API.
+- API authentication basics.
+- Environment variables.
+- Basic web security.
+- XSS.
+- CSRF.
+- Secure password concepts.
+- Public versus private keys, beginner overview.
+- Web deployment.
+- Hosting.
+- Git.
+- GitHub.
+- Domain names.
+- SSL certificates.
+
+Create interactive simulations.
+
+Examples:
+
+URL TO WEBSITE SIMULATOR
+
+Learner enters a URL.
+
+Animate the process:
+
+1. URL parsing.
+2. DNS lookup.
+3. IP address resolution.
+4. Connection establishment.
+5. TLS handshake.
+6. HTTP request.
+7. Server processing.
+8. HTTP response.
+9. Browser parsing.
+10. Rendering.
+11. Page becomes interactive.
+
+Allow learners to click each stage and understand exactly what is happening.
+
+HTTP REQUEST BUILDER
+
+Let learners build an HTTP request.
+
+Select:
+
+- Method.
+- URL.
+- Headers.
+- Body.
+
+Show the resulting request structure.
+
+Provide simulated responses with realistic status codes.
+
+DNS SIMULATOR
+
+Teach domain-to-IP resolution interactively.
+
+CLIENT-SERVER SIMULATOR
+
+Allow users to interact with a simulated client and server.
+
+Show requests and responses visually.
+
+---
+
+LEARNING PATH 4: JAVASCRIPT
+
+Course: JavaScript From Zero
+
+Do not assume the learner knows programming.
+
+Teach:
+
+- What JavaScript is.
+- What programming is.
+- How JavaScript works in the browser.
+- Script tags.
+- External JavaScript.
+- Console.
+- Statements.
+- Expressions.
+- Syntax.
+- Variables.
+- Let.
+- Const.
+- Var and why it is generally avoided.
+- Data types.
+- Strings.
+- Numbers.
+- Booleans.
+- Undefined.
+- Null.
+- Arrays.
+- Objects.
+- Operators.
+- Arithmetic.
+- Comparison.
+- Logical operators.
+- Assignment operators.
+- String concatenation.
+- Template literals.
+- Type conversion.
+- Type coercion.
+- Conditional statements.
+- If.
+- Else.
+- Else if.
+- Switch.
+- Ternary.
+- Truthy and falsy.
+- Loops.
+- For.
+- While.
+- Do while.
+- Break.
+- Continue.
+- Functions.
+- Parameters.
+- Arguments.
+- Return.
+- Scope.
+- Global scope.
+- Local scope.
+- Block scope.
+- Arrow functions.
+- Callbacks.
+- Higher-order functions.
+- Arrays.
+- Array methods.
+- Push.
+- Pop.
+- Shift.
+- Unshift.
+- Slice.
+- Splice.
+- Map.
+- Filter.
+- Reduce.
+- Find.
+- Some.
+- Every.
+- Objects.
+- Object properties.
+- Methods.
+- Destructuring.
+- Spread.
+- Rest.
+- Optional chaining.
+- JSON.
+- DOM.
+- Selecting elements.
+- Query selector.
+- Query selector all.
+- Text content.
+- Inner HTML.
+- Attributes.
+- Classes.
+- Creating elements.
+- Removing elements.
+- Events.
+- Event listeners.
+- Click.
+- Input.
+- Submit.
+- Change.
+- Keyboard events.
+- Event object.
+- Event bubbling.
+- Event delegation.
+- Forms.
+- Validation.
+- Timers.
+- SetTimeout.
+- SetInterval.
+- Error handling.
+- Try.
+- Catch.
+- Throw.
+- Debugging.
+- Console methods.
+- Breakpoints.
+- Async JavaScript.
+- Promises.
+- Async.
+- Await.
+- Fetch.
+- API requests.
+- HTTP error handling.
+- Modules.
+- Import.
+- Export.
+- Local storage.
+- Session storage.
+- Data persistence.
+- Basic security.
+- Avoiding unsafe DOM injection.
+- Practical JavaScript patterns.
+
+For difficult concepts, show:
+
+- A simple analogy.
+- A visual representation.
+- An example.
+- A code breakdown.
+- A practice exercise.
+- A common mistake.
+- A real-world use.
+
+Projects:
+
+1. Interactive counter.
+2. Digital clock.
+3. Calculator.
+4. To-do list.
+5. Form validation system.
+6. Quiz application.
+7. Weather app using an API.
+8. Expense tracker.
+9. Search and filtering interface.
+10. Shopping cart.
+11. Interactive dashboard.
+12. Full responsive website with dynamic JavaScript.
+
+---
+
+LEARNING PATH 5: GIT AND GITHUB
+
+Teach:
+
+- What Git is.
+- Why version control matters.
+- Git versus GitHub.
+- Installing Git.
+- Repository.
+- Init.
+- Status.
+- Add.
+- Commit.
+- Log.
+- Branch.
+- Merge.
+- Clone.
+- Pull.
+- Push.
+- Remote.
+- GitHub repositories.
+- README.
+- .gitignore.
+- Merge conflicts.
+- Basic collaboration.
+- Pull requests.
+- Issues.
+
+Build an interactive Git playground with a simulated repository.
+
+Learners should be able to practise commands and see the repository state change.
+
+---
+
+LEARNING PATH 6: RESPONSIVE WEB DESIGN
+
+Teach:
+
+- Mobile-first.
+- Breakpoints.
+- Viewports.
+- Responsive layouts.
+- Flexbox.
+- Grid.
+- Media queries.
+- Fluid typography.
+- Responsive images.
+- Navigation patterns.
+- Touch targets.
+- Accessibility.
+- Performance.
+- Device testing.
+
+Build an interactive responsive preview where learners can resize the viewport and test their code.
+
+---
+
+LEARNING PATH 7: APIs AND REAL-WORLD FRONTEND
+
+Teach:
+
+- API concepts.
+- REST.
+- JSON.
+- Fetch.
+- GET.
+- POST.
+- Headers.
+- Query parameters.
+- Loading states.
+- Error states.
+- Empty states.
+- Pagination.
+- Search.
+- Filtering.
+- API integration.
+- Authentication concepts.
+- API keys.
+- Why API keys must not be exposed.
+- Backend versus frontend.
+- Data persistence.
+
+Projects:
+
+- Weather dashboard.
+- Country explorer.
+- Movie search.
+- User directory.
+- Product catalog.
+- Dashboard using API data.
+
+Use publicly available APIs where appropriate, but the lessons must not fail if an API becomes unavailable.
+
+Provide fallback mock datasets.
+
+---
+
+LEARNING PATH 8: FRONT-END DEVELOPMENT WORKFLOW
+
+Teach:
+
+- Developer workflow.
+- Requirements.
+- Wireframes.
+- Design interpretation.
+- Project planning.
+- Folder organization.
+- Naming conventions.
+- Reusable components.
+- Accessibility.
+- Testing.
+- Debugging.
+- Performance.
+- SEO.
+- Deployment.
+- Build tools.
+- npm.
+- Package management.
+- Vite.
+- Environment variables.
+- Production builds.
+- Git workflow.
+- Hosting.
+- Domains.
+- HTTPS.
+
+---
+
+7. INTERACTIVE CODE LAB
+
+Create a central coding laboratory.
+
+The learner must be able to write and execute HTML, CSS, and JavaScript directly inside the platform.
+
+Features:
+
+- Code editor.
+- Syntax highlighting.
+- HTML editor.
+- CSS editor.
+- JavaScript editor.
+- Live preview.
+- Run button.
+- Reset button.
+- Console output.
+- Error display.
+- Save workspace.
+- Load workspace.
+- Copy code.
+- Download project.
+- Starter templates.
+- Challenge mode.
+- Fullscreen mode.
+- Mobile-friendly interface.
+
+Provide separate tabs for:
+
+HTML | CSS | JavaScript | Preview | Console
+
+The code must execute in a properly sandboxed iframe.
+
+Do not use eval() in the main application.
+
+Implement a safe execution strategy appropriate for an educational coding playground.
+
+For JavaScript exercises, allow learner code to execute only within the isolated playground environment.
+
+Prevent learner code from accessing application authentication tokens, database credentials, parent-window secrets, or application state.
+
+Do not allow arbitrary code execution on the backend.
+
+The editor should provide useful beginner feedback.
+
+---
+
+8. GUIDED EXERCISE SYSTEM
+
+Create a system for coding challenges.
+
+Each exercise contains:
+
+- Title.
+- Difficulty.
+- Instructions.
+- Learning objectives.
+- Starter code.
+- Expected result.
+- Hints.
+- Validation rules.
+- Test cases.
+- Solution.
+- Explanation.
+
+Example:
+
+Challenge:
+
+Create an h1 element displaying "My First Website".
+
+Starter:
+
+<h1></h1>The learner writes:
+
+<h1>My First Website</h1>The platform validates the result.
+
+If correct:
+
+- Show success.
+- Explain why it works.
+- Award XP.
+- Unlock the next activity.
+
+If incorrect:
+
+- Do not simply say "wrong".
+- Explain the problem.
+- Provide a relevant hint.
+- Allow another attempt.
+
+Create multiple challenge types:
+
+- Code completion.
+- Find the bug.
+- Multiple choice.
+- Drag-and-drop conceptual ordering.
+- Predict the output.
+- Write code.
+- Match concepts.
+- Interactive visual exercises.
+- Build from scratch.
+
+---
+
+9. INTERACTIVE VISUAL EXPLAINERS
+
+Create interactive visual learning tools.
+
+HTML:
+
+- DOM tree explorer.
+- Semantic structure builder.
+- Form builder.
+
+CSS:
+
+- Box model explorer.
+- Flexbox playground.
+- Grid playground.
+- Positioning playground.
+- Color picker.
+- Typography playground.
+- Responsive breakpoint simulator.
+
+JavaScript:
+
+- Variable visualizer.
+- Data type visualizer.
+- Condition simulator.
+- Loop visualizer.
+- Function visualizer.
+- Array visualizer.
+- Object visualizer.
+- DOM manipulation visualizer.
+- Event propagation visualizer.
+- Async execution timeline.
+
+Networking:
+
+- DNS visualizer.
+- HTTP request builder.
+- Client/server simulator.
+- Browser request lifecycle.
+- API response simulator.
+
+Every visualizer must be interactive and functional.
+
+---
+
+10. LEARNING PROGRESS AND GAMIFICATION
+
+Implement meaningful gamification without making it childish.
+
+Features:
+
+- XP.
+- Levels.
+- Learning streaks.
+- Achievements.
+- Course completion.
+- Module completion.
+- Lesson completion.
+- Challenge completion.
+- Project completion.
+- Skill progression.
+- Milestones.
+- Progress tracking.
+- Daily learning goals.
+- Optional leaderboard.
+
+Example achievements:
+
+- First lesson completed.
+- First code execution.
+- First challenge solved.
+- HTML foundations completed.
+- CSS foundations completed.
+- First JavaScript function.
+- First project completed.
+- Seven-day streak.
+- Debugging specialist.
+
+Rewards must be earned through real activity.
+
+Never award achievements simply because a dashboard was loaded.
+
+---
+
+11. PROJECT WORKSPACE
+
+Create a project-based learning section.
+
+Each project must have:
+
+- Project description.
+- Difficulty.
+- Requirements.
+- Learning outcomes.
+- Recommended lessons.
+- Starter files.
+- Instructions.
+- Milestones.
+- Completion criteria.
+- Optional hints.
+- Reference preview.
+- Project workspace.
+- Code editor.
+- Live preview.
+- Submission checklist.
+- Reflection questions.
+
+Projects must progressively increase in complexity.
+
+Include beginner, intermediate, and advanced projects.
+
+Allow users to save their work and resume later.
+
+---
+
+12. LEARNING ASSISTANT
+
+Implement a contextual learning assistant.
+
+The assistant should be able to:
+
+- Explain the current lesson.
+- Simplify difficult concepts.
+- Explain code line by line.
+- Give hints.
+- Explain errors.
+- Suggest next steps.
+- Generate practice questions from lesson content.
+- Explain why an answer is incorrect.
+- Provide analogies.
+
+If no external AI API is configured, implement a functional knowledge-based assistant with contextual responses and predefined explanations.
+
+If an AI integration is added, it must be optional and securely configured through a backend.
+
+Do not pretend an AI model is connected if it is not.
+
+Create a panel called:
+
+"ASK YOUR TUTOR"
+
+Suggested questions:
+
+- Explain this more simply.
+- Explain this code line by line.
+- Give me an example.
+- Give me a hint.
+- Why is my code failing?
+- Test my understanding.
+
+---
+
+13. QUIZZES AND ASSESSMENTS
+
+Implement assessment functionality.
+
+Features:
+
+- Multiple choice.
+- True or false.
+- Code output prediction.
+- Coding exercises.
+- Topic assessments.
+- Module tests.
+- Course assessments.
+- Final projects.
+- Scoring.
+- Feedback.
+- Retry.
+- Review incorrect answers.
+- Explanations.
+
+Questions should be randomized when appropriate.
+
+Do not expose answers before submission.
+
+Save assessment results.
+
+Use assessments to determine whether a learner has understood the material.
+
+Allow configurable passing scores.
+
+---
+
+14. USER PROFILE AND SETTINGS
+
+Build:
+
+- Profile page.
+- Personal information.
+- Learning goals.
+- Preferred learning pace.
+- Learning preferences.
+- Theme settings.
+- Account settings.
+- Progress overview.
+- Achievement collection.
+- Project portfolio.
+- Learning history.
+
+---
+
+15. ADMINISTRATOR SYSTEM
+
+Implement an administrator dashboard with role-based access.
+
+Admin features:
+
+- View users.
+- Manage courses.
+- Create modules.
+- Create lessons.
+- Edit lesson content.
+- Manage exercises.
+- Manage quizzes.
+- Manage projects.
+- Publish and unpublish content.
+- View course analytics.
+- View learner progress.
+- Manage announcements.
+
+Use proper role-based authorization.
+
+Do not rely on frontend-only admin checks.
+
+Use database-level authorization and secure server-side validation.
+
+Seed a development admin account through a documented secure process.
+
+Do not hardcode privileged credentials.
+
+---
+
+16. DATABASE ARCHITECTURE
+
+Design a proper relational database.
+
+Suggested entities:
+
+- profiles
+- roles
+- courses
+- learning_paths
+- modules
+- lessons
+- lesson_steps
+- exercises
+- exercise_tests
+- quizzes
+- quiz_questions
+- quiz_attempts
+- projects
+- project_milestones
+- user_progress
+- user_lesson_progress
+- user_exercise_submissions
+- user_project_progress
+- achievements
+- user_achievements
+- xp_transactions
+- learning_sessions
+- bookmarks
+- notes
+- saved_workspaces
+- announcements
+
+Create:
+
+- Foreign keys.
+- Appropriate indexes.
+- Constraints.
+- Timestamps.
+- Proper cascading behavior.
+- Row Level Security policies.
+- Secure ownership checks.
+
+Users must only access their own private progress, notes, workspaces, submissions, and account information.
+
+Published courses may be publicly readable.
+
+Admin privileges must be securely enforced.
+
+Avoid storing redundant data unnecessarily.
+
+---
+
+17. LESSON CONTENT FORMAT
+
+Create a reusable lesson content schema.
+
+Lessons should support:
+
+- Markdown.
+- Code snippets.
+- Interactive components.
+- Step-by-step explanations.
+- Images.
+- Exercises.
+- Quizzes.
+- Callouts.
+- Warnings.
+- Examples.
+- Tabs.
+- Revealable content.
+- Embedded visualizers.
+- Practice activities.
+
+Create a lesson renderer that supports these content types.
+
+Do not hardcode every lesson into a separate React component.
+
+The lesson content should be data-driven and reusable.
+
+Create seed content for the curriculum.
+
+The initial release must contain substantial, genuinely useful learning material.
+
+Minimum initial content requirement:
+
+- 8 learning paths.
+- At least 5 modules per major path.
+- Multiple lessons per module.
+- At least 3 exercises per module.
+- At least 1 assessment per module.
+- At least 10 complete beginner projects.
+
+Prioritize quality over superficial quantity.
+
+Do not create 200 empty lessons with one paragraph each.
+
+Every implemented lesson should contain meaningful teaching content and an actual activity.
+
+---
+
+18. SEARCH AND NAVIGATION
+
+Implement:
+
+- Global search.
+- Course search.
+- Lesson search.
+- Project search.
+- Topic search.
+- Search suggestions.
+- Filters.
+- Breadcrumbs.
+- Sidebar navigation.
+- Course navigation.
+- Previous lesson.
+- Next lesson.
+- Bookmarks.
+
+The user should never feel lost.
+
+---
+
+19. MOBILE EXPERIENCE
+
+The platform must work exceptionally well on mobile phones.
+
+Mobile requirements:
+
+- Responsive navigation.
+- Mobile dashboard.
+- Touch-friendly controls.
+- Responsive code editor.
+- Stacked editor and preview.
+- Collapsible panels.
+- Responsive lesson content.
+- Comfortable reading widths.
+- No horizontal overflow.
+- Proper keyboard handling.
+- Responsive code blocks.
+- Mobile coding experience.
+
+Do not treat mobile as an afterthought.
+
+---
+
+20. SECURITY
+
+Implement security practices appropriate for a real application.
+
+Requirements:
+
+- Secure authentication.
+- Input validation.
+- Authentication state handling.
+- Role-based permissions.
+- Row Level Security.
+- Safe iframe sandboxing.
+- Secure handling of learner code.
+- No privileged secrets in client code.
+- No unrestricted backend code execution.
+- Avoid XSS.
+- Sanitize user-generated content.
+- Secure API access.
+- Rate limiting where relevant.
+- Secure password recovery.
+- Proper error handling.
+- Avoid exposing database information.
+- Avoid logging sensitive data.
+
+Document security limitations of the educational coding sandbox.
+
+---
+
+21. PERFORMANCE
+
+Optimize for:
+
+- Mobile devices.
+- Low bandwidth.
+- Slow connections.
+- Efficient loading.
+- Lazy loading.
+- Code splitting.
+- Caching where appropriate.
+- Lightweight animations.
+- Efficient database queries.
+- Optimized assets.
+
+Avoid unnecessary dependencies.
+
+---
+
+22. FUNCTIONAL REQUIREMENTS
+
+Every visible button must work.
+
+Every navigation link must lead somewhere meaningful.
+
+Every form must validate.
+
+Every lesson must have actual content.
+
+Every progress indicator must reflect real data.
+
+Every quiz must calculate scores.
+
+Every challenge must validate submissions.
+
+Every code editor must function.
+
+Every interactive visualization must respond to user input.
+
+Every authentication screen must function.
+
+Every setting must save.
+
+Every modal must open and close properly.
+
+Every search must return results.
+
+Every project must have a functional workspace.
+
+No fake functionality.
+
+No dead buttons.
+
+No placeholder pages.
+
+No hardcoded dashboard statistics.
+
+No fake AI responses claiming to come from a real model.
+
+No TODO comments replacing implementation.
+
+---
+
+23. TESTING
+
+Test the application systematically.
+
+Implement tests where appropriate.
+
+Test:
+
+- Authentication.
+- Registration.
+- Login.
+- Logout.
+- Protected routes.
+- Lesson navigation.
+- Lesson completion.
+- Progress persistence.
+- Quiz scoring.
+- Challenge validation.
+- Workspace persistence.
+- Project progression.
+- Responsive layout.
+- Search.
+- Admin access.
+- Database security policies.
+- Sandbox isolation.
+
+Run:
+
+- Type checking.
+- Build.
+- Unit tests.
+- Integration tests.
+- Browser tests where available.
+
+Fix all errors.
+
+Do not claim that tests passed unless they actually ran.
+
+---
+
+24. IMPLEMENTATION WORKFLOW
+
+Follow this workflow:
+
+PHASE 1: Inspect the environment.
+
+Determine:
+
+- Available files.
+- Existing application.
+- Installed packages.
+- Development environment.
+- Available services.
+- Existing configuration.
+
+Do not destroy existing work unnecessarily.
+
+PHASE 2: Establish architecture.
+
+Create a concise architecture and implementation plan.
+
+PHASE 3: Build the foundation.
+
+Implement:
+
+- Design system.
+- Navigation.
+- Routing.
+- Authentication.
+- Database.
+- Application shell.
+
+PHASE 4: Build the learning engine.
+
+Implement:
+
+- Courses.
+- Modules.
+- Lessons.
+- Lesson renderer.
+- Break It Down mode.
+- Progress tracking.
+
+PHASE 5: Build the interactive labs.
+
+Implement:
+
+- Code editor.
+- Live preview.
+- Sandbox.
+- Exercises.
+- Visualizers.
+
+PHASE 6: Build the curriculum.
+
+Implement real lesson content.
+
+PHASE 7: Build projects and assessments.
+
+PHASE 8: Build dashboard, gamification, profile, and admin.
+
+PHASE 9: Test everything.
+
+PHASE 10: Polish.
+
+Fix:
+
+- Visual inconsistencies.
+- Broken routes.
+- Responsive issues.
+- Runtime errors.
+- Type errors.
+- Console errors.
+- Missing functionality.
+- Accessibility issues.
+
+Do not stop after creating the landing page.
+
+Do not stop after implementing the design.
+
+Do not stop after scaffolding the application.
+
+Continue until the actual platform is built.
+
+---
+
+25. ACCEPTANCE CRITERIA
+
+The project is complete only when:
+
+1. The application launches successfully.
+2. The landing page is fully implemented.
+3. Authentication works when configured.
+4. The dashboard works.
+5. Courses are navigable.
+6. Lessons contain real educational content.
+7. Break It Down mode works.
+8. Interactive exercises work.
+9. The coding playground works.
+10. Code preview works.
+11. The execution environment is sandboxed.
+12. Progress persists.
+13. Quizzes work.
+14. Projects work.
+15. Search works.
+16. Mobile responsiveness is excellent.
+17. Database architecture is implemented.
+18. Security policies are implemented.
+19. The application builds successfully.
+20. There are no major runtime errors.
+21. The README explains how to run the application.
+22. No core feature is represented by a placeholder.
+
+---
+
+FINAL INSTRUCTION
+
+Use your highest coding capability.
+
+Make sound engineering decisions independently.
+
+Do not keep asking me for permission to implement obvious features.
+
+Do not reduce the scope to a demo.
+
+Do not substitute static screenshots for real functionality.
+
+Do not create an attractive frontend with a nonfunctional backend.
+
+Do not generate fake data to make the dashboard look active.
+
+Do not give me code that I must manually assemble from dozens of disconnected snippets.
+
+Create the complete project in the working environment.
+
+If credentials or external configuration are required, implement the integration, create the required configuration files, provide a .env.example, and make the missing configuration explicit.
+
+If you encounter limitations, implement the strongest functional fallback and document the limitation.
+
+Prioritize real functionality, instructional quality, user experience, security, maintainability, and accessibility.
+
+The final product must feel like a genuine online coding academy that can help someone with absolutely no experience become a competent front-end developer.
+
+PRODUCT: LUDEK TECH HUB
+
+MISSION: TAKE THE LEARNER FROM ZERO TO BUILDING REAL WEBSITES.
+
+Now inspect the environment and begin building. Do not merely respond with a plan. Start implementation immediately.

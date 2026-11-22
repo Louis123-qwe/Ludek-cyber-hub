@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludek Tech Hub — Learn. Understand. Build. Become.</title>
+    <meta
+      name="description"
+      content="An interactive front-end engineering academy taking complete beginners from zero technical knowledge to building real, responsive websites."
+    />
+    <meta property="og:title" content="Ludek Tech Hub — Learn. Understand. Build. Become." />
+    <meta
+      property="og:description"
+      content="Master HTML, CSS, JavaScript, Networking, Git, and APIs through slow step-by-step breakdowns, interactive visualizers, and a sandboxed code lab."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('ludek_theme');
+          var root = document.documentElement;
+          if (saved === 'light') {
+            root.classList.remove('dark');
+          } else {
+            root.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#090B10] dark:text-slate-100 antialiased selection:bg-blue-600/20 selection:text-blue-400">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
